@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1><a href="animal/new"> <button>new animal</button></a></h1>
+        
+        <% for(animal of animals) { %>
+            <div>
+            <a href="animal/<%=animal._id%>"> 
+                <h1>
+                    <%= animal.species %>
+                </h1>
+            </div>
+        </a>
+        <% } %>
+    </div>
+</body>
+</html>

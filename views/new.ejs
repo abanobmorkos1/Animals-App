@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d</title>
+</head>
+<body>
+    <h1>Create an animal</h1>
+    <!-- Working on forms -->
+    <form action="/animal" method="post">
+        <label> Species: <input type="text" name="species" placeholder="Species" </label>
+        <br>
+        <label> Life expectancy <input type="number" name="lifeExpectancy" placeholder="Species" </label>
+        <br>
+        <label> Location: <input type="text" name="location" placeholder="Species" </label>
+        <br>
+        <label> Extinct <input type="checkbox" name="extinct" </label>
+        <br>
+        <input type="submit" value = "Add animal" />
+    </form>
+</body>
+</html>
+
+<!-- const animalSchema = new mongoose.Schema({
+    species :  String, 
+    extinct : Boolean,
+    location: String,
+    lifeExpectancy : Number
+});  -->

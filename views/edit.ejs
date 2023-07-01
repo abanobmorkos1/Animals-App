@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="/animal/<%= animal._id%>?_method=put">
+        <label> Species: <input type="text" name="species" placeholder="Species" </label>
+        <br>
+        <label> Life expectancy <input type="number" name="lifeExpectancy" placeholder="Species" </label>
+        <br>
+        <label> Location: <input type="text" name="location" placeholder="Species" </label>
+        <br>
+        <label> Extinct <input type="checkbox" name="extinct" </label>
+        <br>
+        <input type="submit" value = "Add animal" />
+    </form>
+</body>
+</html>
